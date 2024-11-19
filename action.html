@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore thrilling action movies at MovieFlix.">
+  <meta name="keywords" content="Action Movies, MovieFlix, Film, Cinema">
+  <title>MovieFlix - Action Movies</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ff3f34;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff3f34;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff3f34;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url(3075840.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #ff3f34;
+    }
+
+    .movies {
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ff3f34;
+      text-align: center;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    .movie-card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .movie-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .movie-card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .movie-card p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">MovieFlix</div>
+    <nav>
+      <ul>
+        <li><a href="movie.html">Home</a></li>
+        <li><a href="action.html">Action</a></li>
+        <li><a href="drama.html">Drama</a></li>
+        <li><a href="scifi.html">Sci-Fi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Action Movies</h1>
+      <p>Explore the thrill and adventure with our top picks for action movies.</p>
+    </div>
+  </section>
+
+  <!-- Action Movies Section -->
+  <section class="movies">
+    <h2 class="section-title">Popular Action Movies</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="Top-Gun-Maverick-Tom-Cruise-Character-Poster-movies-44446627-1080-1920.jpg" alt="Movie 1 - Action">
+        <h3>Top Gun Maverick</h3>
+        <p>Set 30 years after its predecessor, it follows Maverick's return to the United States Navy Strike Fighter Tactics Instructor program (also known as U.S. Navy-Fighter Weapons School - "TOPGUN"), where he must confront his past as he trains a group of younger pilots, among them the son of Maverick's deceased best friend Lieutenant Nick "Goose" Bradshaw, USN.</p>
+      </div>
+      <div class="movie-card">
+        <img src="f9393cc8c94087495fc45247cdd3516d.webp" alt="Movie 2 - Action">
+        <h3>Furiosa</h3>
+        <p>Furiosa is an action-adventure film that tells the origin story of the headstrong and fearless Furiosa. Set shortly after the beginning of the "end of the world," Furiosa is kidnapped and brought before a powerful warlord, now forced to work for him. To find her way back home, Furiosa will adapt to the new harsh and arid world as she grows into the Furiosa she becomes known to be. </p>
+      </div>
+      <div class="movie-card">
+        <img src="zje0121z523lqe8ic163ck1BYcY.jpg" alt="Movie 3 - Action">
+        <h3>Mission Impossible 3</h3>
+        <p>Retired IMF agent Ethan Hunt gets thrown back into the mix when his protégé Agent Lindsey Farris gets captured in Berlin by Owen Davian, a prominent dealer in the international black market. After his failure to save her, Ethan decides to go after Davian himself..</p>
+      </div>
+      <div class="movie-card">
+        <img src="wp9419631.jpg" alt="Movie 4 - Action">
+        <h3>Deadpool</h3>
+        <p>“Deadpool” is about a guy who constantly pushes back against the expectations of the superhero, but the movie about him fails to match his rebellious personality. It’s a remarkably straightforward origin flick, lacking in true satire of its genre, carried almost entirely by its lead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieFlix. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+  </footer>
+
+</body>
+</html>

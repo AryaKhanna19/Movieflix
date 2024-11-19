@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Magic</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ff3f34;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff3f34;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    /* Search box */
+    .search-box {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .search-box input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      width: 200px;
+    }
+
+    .search-box button {
+      padding: 8px;
+      background-color: #ff3f34;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+      font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      font-weight: bold;
+      background-image: url(thumb-1920-85182.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 2px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #ff3f34;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    /* Movie Categories */
+    .movies {
+      padding: 160px 240px;
+    }
+
+    .movies h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 60px;
+    }
+
+    .movie-card {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .movie-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      width: 250px;
+    }
+
+    .movie-card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .movie-card p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #000;
+    }
+
+    footer a {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">MovieMagic</div>
+    <nav>
+      <ul>
+        <li><a href="action.html">Action</a></li>
+        <li><a href="drama.html">Drama</a></li>
+        <li><a href="scifi.html">Sci-Fi</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Search for movies...">
+      <button type="submit">Search</button>
+    </div>
+  </header>
+
+  <!-- Hero Section (Featured Movie) -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="h5">Featured Movie: Inception</h1>
+      <p>A mind-bending thriller that will leave you questioning reality.</p>
+      <a href="#" class="btn">Watch Now</a>
+    </div>
+  </section>
+
+  <!-- Movie Categories -->
+  <section class="movies">
+    <h2>Top Picks for You</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="il_fullxfull.3039756545_by3j.webp" alt="Movie 1">
+        <h3>The Shawshank Redemption</h3>
+        <p>“The Shawshank Redemption” is a powerful drama that tells the story of Andy Dufresne, a banker who is sentenced to life in prison for the murder of his wife and her lover.</p>
+      </div>
+      <div class="movie-card">
+        <img src="a104d7bf99fe08a48520566f1d81509d--alternative-movie-posters-the-godfather-poster.jpg" alt="Movie 2">
+        <h3>The Godfather</h3>
+        <p>The Godfather is set in the 1940s and takes place entirely within the world of the Corleones, a fictional New York Mafia family.</p>
+      </div>
+      <!-- Add more movie cards as needed -->
+    </div>
+
+    <h2>Trending Now</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg" alt="Movie 3">
+        <h3>The Lord of the Rings</h3>
+        <p>The Lord of the Rings is about the war of the peoples of the fantasy world Middle-earth against a dark lord known as "Sauron."</p>
+      </div>
+      <div class="movie-card">
+        <img src="the-dark-knight-trilogy-a-fire-will-rise-i184446.jpg" alt="Movie 4">
+        <h3>The Dark Knight</h3>
+        <p>The Dark Knight is a 2008 superhero film directed by Christopher Nolan, based on the DC Comics superhero Batman.</p>
+      </div>
+      <!-- Add more movie cards as needed -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieFlix | Follow us on
+      <a href="#">Facebook</a>,
+      <a href="#">Instagram</a>,
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>

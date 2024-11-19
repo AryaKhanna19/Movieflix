@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie Store - Stylish and Cozy Hoodies</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body and Container */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Header and Navigation */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Banner */
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            background-color: #e60023;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner a:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Product Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: #777;
+            padding: 0 15px;
+            margin-bottom: 10px;
+        }
+
+        .product-card .price {
+            font-size: 24px;
+            color: #e60023;
+            font-weight: bold;
+        }
+
+        .product-card .buy-btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #e60023;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .product-card .buy-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Hoodie Store</h1>
+        <p>Your favorite destination for stylish and cozy hoodies.</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar container">
+        <div class="logo">HoodieStore</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h1>Fall Collection 2024</h1>
+        <p>Discover our latest cozy and stylish hoodies to keep you warm this season.</p>
+        <a href="#">Shop Now</a>
+    </section>
+
+    <!-- Product Section -->
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x400" alt="Hoodie 1">
+                <h3>Classic Grey Hoodie</h3>
+                <p>Stay cozy with our classic grey hoodie.</p>
+                <div class="price">$49.99</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x400" alt="Hoodie 2">
+                <h3>Black Zip-Up Hoodie</h3>
+                <p>Perfect for layering and everyday wear.</p>
+                <div class="price">$54.99</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400x400" alt="Hoodie 3">
+                <h3>Blue Pullover Hoodie</h3>
+                <p>Comfortable and stylish, in a cool blue shade.</p>
+                <div class="price">$59.99</div>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 HoodieStore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

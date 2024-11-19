@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input{
+            width:40%;
+        }
+        #i1{
+            background-color: burlywood;
+        }
+        input[type="text"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>My Profile</legend>
+        <label for="i1">Name:</label>
+        <input type="text" placeholder="Enter your name" id="i1" name="n1" value="Arya"><br>
+        <label for="i2">Gender</label><br>
+        <input type="radio" id="i2" name="n2"><label>Male</label>
+        <input type="radio" id="i3" name="n3"><label>Female</label><br>
+        <label for="i3">Enter your hobbies</label><br>
+        <input type="checkbox" id="i4" name="n2"><label>Swimming</label>
+        <input type="checkbox" id="i5" name="n3"><label>Drawing</label>
+        <input type="checkbox" id="i6" name="n3"><label>Travelling</label><br>
+        <label>D.O.B</label>
+        <input type="date" id="i6" name="n4" min="2024-10-01" max="2024-10-10"><br>
+        <label>Enter phone number</label>
+        <input type="tel" pattern="[0-9]{5}-[0-9]{5}" maxlength="11" id="i7" name="n4">
+        <input type="submit" value="Submit"><br>
+        <label>Email</label>
+        <input type="email">
+        <input type = "submit" value="submit"><br>
+        <label>Quantity</label>
+        <input type="number" min="10" max="40" step="5">
+        <input type="Sunbmit" value="submit"><br>
+        <input type="image" min="10" max="40" step="5">
+        <input type="image" src="super.jpeg"><br>
+        <label>Upload file</label>
+        <input type="file" multiple><br>
+        <label>Dropdown</label>
+        <select>
+            <option>Home</option>
+            <option>About</option>
+            <option>Contact</option>
+            <option>Profile</option>
+
+
+        </select>
+        <label>Enter a password</label>
+        <input type="password"><br>
+        <label>search</label>
+        <input type="search">
+        <textarea rows="5" cols="20">Describe yourself</textarea>
+        <input type="submit" value="submit">
+
+   
+   </fieldset>
+    </form>
+</body>
+</html>

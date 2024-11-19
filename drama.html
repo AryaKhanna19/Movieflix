@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore compelling drama movies at MovieFlix.">
+  <meta name="keywords" content="Drama Movies, MovieFlix, Film, Cinema">
+  <title>MovieFlix - Drama Movies</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ff3f34;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff3f34;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff3f34;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url(pk.webp);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #ff3f34;
+    }
+
+    .movies {
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ff3f34;
+      text-align: center;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    }
+
+    .movie-card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .movie-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .movie-card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .movie-card p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">MovieFlix</div>
+    <nav>
+      <ul>
+        <li><a href="movie.html">Home</a></li>
+        <li><a href="action.html">Action</a></li>
+        <li><a href="drama.html">Drama</a></li>
+        <li><a href="scifi.html">Sci-Fi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Drama Movies</h1>
+      <p>Explore the depth of emotions with our top picks for drama movies.</p>
+    </div>
+  </section>
+
+  <!-- Drama Movies Section -->
+  <section class="movies">
+    <h2 class="section-title">Popular Drama Movies</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg" alt="Movie 1 - Drama">
+        <h3>Lord of the rings</h3>
+        <p>The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil. Its many worlds and creatures were drawn from Tolkien extensive knowledge of philology and folklore.</p>
+      </div>
+      <div class="movie-card">
+        <img src="joker.jpeg" alt="Movie 2 - Drama">
+        <h3>Joker</h3>
+        <p>Joker Revolves around Arthur Fleck and how society rejects him time and again. He goes from trying to fit in to becoming an outcast against defying odds and through violent means.</p>
+      </div>
+      <div class="movie-card">
+        <img src="gl.jpg" alt="Movie 3 - Drama">
+        <h3>Gladiator</h3>
+        <p>Gladiator is a historical epic from director Ridley Scott. After being betrayed by the new Caesar, Roman general Maximus is sold into slavery as a gladiator where he rises to fame as a people's champion and finds an opportunity to exact his revenge.</p>
+      </div>
+      <div class="movie-card">
+        <img src="sch.jpg" alt="Movie 4 - Drama">
+        <h3>Schindler's List</h3>
+        <p>“Schindler’s List” is a 1993 American epic historical drama film directed by Steven Spielberg and starring Liam Neeson, Ben Kingsley, and Ralph Fiennes. The movie tells the true story of Oskar Schindler, a German businessman who saves the lives of over a thousand Jewish refugees during the Holocaust by employing them in his factories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MovieFlix. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+  </footer>
+
+</body>
+</html>
